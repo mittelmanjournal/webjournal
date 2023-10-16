@@ -22,9 +22,26 @@ header {
     overflow: hidden;
 }
 
+/* Button Styles */
+button {
+    background-color: black; /* Green background color */
+    color: white; /* White text color */
+    padding: 6px 12px; /* Padding inside the button */
+    border: none; /* No border */
+    border-radius: 6px; /* Rounded corners */
+    font-size: 14px; /* Font size */
+    cursor: pointer; /* Cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: darkgray; /* Darker green color on hover */
+}
+
 .post-newest{
     background-color: white;
-    margin: 125px 0 -35px; /* Increase the top margin to make space for the fixed header */
+    margin: 125px 0 0; /*1 post: 0, 2 posts (oldest then newest): -35px, 3 posts and more (oldest, post, newest): -35px*/
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -42,11 +59,26 @@ header {
 
 .post {
     background-color: white;
-    margin: 60px 0 -35px; /* Increase the top margin to make space for the fixed header */
+    margin: 60px 0 -35px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
     position: relative;
+}
+
+.gradient-text {
+    background-image: linear-gradient(to left, white, black); /* Define your gradient colors here */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+.expandable-text {
+    background-color: white;
+    color: black;
+    display: none;
+    /* Initially hide the expandable text */
 }
 
 .post-date {
@@ -56,9 +88,6 @@ header {
     color: #888;
 }
 
-.extra-space {
-    height: 200px; /* Adjust the height as needed to create extra space */
-}
 
 footer {
     background-color: #333;

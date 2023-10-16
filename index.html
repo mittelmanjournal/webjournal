@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Blog</title>
+    <title>Mittelman Journal</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -16,53 +17,99 @@
     </header>
 
     <div class="container">
+
+        <!-- <div class="post-newest">
+            <span class="post-date">October 16, 2023</span>
+            <h2>First post!</h2>
+            <p>
+                <span class="gradient-text" id="gradient-text-5">This is the content of the first blog post.</span>
+                <span class="expandable-text" id="post5" style="display: none">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+                </span>
+            </p>
+            <button onclick="toggleDiv('post5', 'gradient-text-5', 'btn5')" id="btn5">Show</button>
+        </div>
+
+        <div class="post">
+            <span class="post-date">October 16, 2023</span>
+            <h2>First post!</h2>
+            <p>
+                <span class="gradient-text" id="gradient-text-4">This is the content of the first blog post.</span>
+                <span class="expandable-text" id="post4" style="display: none">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+                </span>
+            </p>
+            <button onclick="toggleDiv('post4', 'gradient-text-4', 'btn4')" id="btn4">Show</button>
+        </div>
+
+        <div class="post">
+            <span class="post-date">October 16, 2023</span>
+            <h2>First post!</h2>
+            <p>
+                <span class="gradient-text" id="gradient-text-3">This is the content of the first blog post.</span>
+                <span class="expandable-text" id="post3" style="display: none">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+                </span>
+            </p>
+            <button onclick="toggleDiv('post3', 'gradient-text-3', 'btn3')" id="btn3">Show</button>
+        </div>
+
+        <div class="post">
+            <span class="post-date">October 16, 2023</span>
+            <h2>First post!</h2>
+            <p>
+                <span class="gradient-text" id="gradient-text-2">This is the content of the first blog post.</span>
+                <span class="expandable-text" id="post2" style="display: none">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+                </span>
+            </p>
+            <button onclick="toggleDiv('post2', 'gradient-text-2', 'btn2')" id="btn2">Show</button>
+        </div> -->
+
         <div class="post-newest">
-            <span class="post-date">October 15, 2023</span>
-            <h2>Post Title 1</h2>
-            <p>This is the content of the first blog post. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+            <span class="post-date">October 16, 2023</span>
+            <h2>First post!</h2>
+            <p> <!--212 char limit header line-->
+                <span class="gradient-text" id="gradient-text-1">My name is Uri Mittelman. I am a Lake Washington High
+                    School graduate and currently pursuing a
+                    degree in Computer Science at
+                    UW Bothell. Since the early days of Chat GPT I've been interested in Artificial</span>
+                <span class="expandable-text" id="post1" style="display: none">
+                    Intelligence. I was
+                    so intrigued that me and my friend Armaan did a month long research
+                    project and lecture to try to understand the inner workings of neural networks and share our
+                    findings. I've programmed custom neural networks in Google Colab utilizing freely available
+                    datasets
+                    online,
+                    some of these neural networks will be showcased on my LinkedIn and YouTube pages in the coming days.
+                    I'm working on
+                    a project where
+                    I'm developing a data scraper to create a dataset of each NFL game over the last 21 years.
+                    Using that dataset I will construct a neural network in Google Colab that attempts to predict
+                    outcomes of new unseen games. I started watching football at the age of 7.
+                    The first game I ever saw was the Seahawks versus Falcons Divisional Round game where the Hawks lost
+                    to a game-sealing field goal (Seahawks almost came back from a 20 point deficit in this game:
+                    <a href="https://www.youtube.com/watch?v=DHSWp7U6U7I&ab_channel=NFL">rewatch this game</a>).
+                    I remember in the post game conference the players were saying how they would win it all the
+                    following year, and they did.
+                    I also really enjoy deeply analytical research writing. Currently, I'm
+                    writing a paper exploring the impact of activism in professional sports. When I'm not busy
+                    in my studies or projects, I have fun playing basketball with my friends.
+                </span>
+            </p>
+            <button onclick="toggleDiv('post1', 'gradient-text-1', 'btn1')" id="btn1">Show</button>
         </div>
 
-        <div class="post">
-            <span class="post-date">October 16, 2023</span>
-            <h2>Post Title 2</h2>
-            <p>This is the content of the second blog post. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-        </div>
 
-        <div class="post">
-            <span class="post-date">October 16, 2023</span>
-            <h2>Post Title 2</h2>
-            <p>This is the content of the second blog post. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-        </div>
-
-        <div class="post">
-            <span class="post-date">October 16, 2023</span>
-            <h2>Post Title 2</h2>
-            <p>This is the content of the second blog post. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-        </div>
-
-        <div class="post">
-            <span class="post-date">October 16, 2023</span>
-            <h2>Post Title 2</h2>
-            <p>This is the content of the second blog post. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-        </div>
-
-        <div class="post-oldest">
-            <span class="post-date">October 16, 2023</span>
-            <h2>Post Title 3</h2>
-            <p>This is the content of the second blog post. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-        </div>
-        
     </div>
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 Simple Blog. All rights reserved.</p>
+            <p>&copy; 2023 Mittelman Journal. All rights reserved.</p>
         </div>
     </footer>
 </body>
