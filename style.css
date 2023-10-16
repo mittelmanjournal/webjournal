@@ -89,7 +89,7 @@ button:hover {
 }
 
 
-footer {
+/*footer {
     background-color: #333;
     color: white;
     text-align: center;
@@ -99,9 +99,8 @@ footer {
     width: 100%;
 }
 
-/* CSS for desktop devices */
 @media only screen and (max-width: 767px) {
     footer {
         display: none;
     }
-}
+}*/
