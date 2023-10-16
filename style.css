@@ -98,3 +98,10 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* CSS for desktop devices */
+@media only screen and (max-width: 767px) {
+    footer {
+        display: none;
+    }
+}

@@ -14,3 +14,16 @@ function toggleDiv(post, gradient, btn) {
         postHeader.style.backgroundImage = "none";
     }
 }
+
+// JavaScript code
+window.addEventListener('DOMContentLoaded', function() {
+    var gradientTextDesktop = document.getElementById('gradient-text-1-desktop');
+    var gradientTextMobile = document.getElementById('gradient-text-1-mobile');
+
+    // Check if the screen width is less than or equal to 767px (typical for mobile devices)
+    if (window.innerWidth <= 767) {
+        gradientTextMobile.style.display = 'inline'; // Show mobile version text
+    } else {
+        gradientTextDesktop.style.display = 'inline'; // Show desktop version text
+    }
+});
