@@ -6,8 +6,8 @@ function toggleDiv(post, gradient, btn) {
         showHide.textContent = "Show";
         postBody.style.display = "none";
         postHeader.style.display = "inline-block";
-        postHeader.style.color = "transparent";
-        postHeader.style.backgroundImage = "linear-gradient(to left, white, black)";
+        //postHeader.style.color = "transparent";
+        //postHeader.style.backgroundImage = "linear-gradient(to left, white, black)";
     } else {
         showHide.textContent = "Hide";
         postBody.style.display = "inline-block"; // Change to inline-block to appear on the same line

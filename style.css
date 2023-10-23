@@ -25,10 +25,10 @@ header {
 
 /* Button Styles */
 button {
-    background-color: black; /* Green background color */
-    color: white; /* White text color */
+    background-color: #E6C068; /* Green background color */
+    color: black; /* White text color */
     padding: 6px 12px; /* Padding inside the button */
-    border: none; /* No border */
+    border: 1px solid white; /* No border */
     border-radius: 6px; /* Rounded corners */
     font-size: 14px; /* Font size */
     cursor: pointer; /* Cursor on hover */
@@ -37,11 +37,11 @@ button {
 
 /* Button Hover Effect */
 button:hover {
-    background-color: darkgray; /* Darker green color on hover */
+    background-color: white; /* Darker green color on hover */
 }
 
 .post-newest{
-    background-color: white;
+    background-color: black;
     margin: 125px 0 0; /*1 post: 0, 2 posts (oldest then newest): -35px, 3 posts and more (oldest, post, newest): -35px*/
     padding: 20px;
     border: 1px solid #E6C068;
@@ -50,7 +50,7 @@ button:hover {
 }
 
 .post-oldest{
-    background-color: white;
+    background-color: black;
     margin: 60px 0 95px; /* Increase the top margin to make space for the fixed header */
     padding: 20px;
     border: 1px solid #E6C068;
@@ -59,7 +59,7 @@ button:hover {
 }
 
 .post {
-    background-color: white;
+    background-color: black;
     margin: 60px 0 -35px;
     padding: 20px;
     border: 1px solid #E6C068;
@@ -68,7 +68,7 @@ button:hover {
 }
 
 .gradient-text {
-    background-image: linear-gradient(to left, white, black); /* Define your gradient colors here */
+    background-image: linear-gradient(to left, black, white); /* Define your gradient colors here */
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -76,8 +76,8 @@ button:hover {
 }
 
 .expandable-text {
-    background-color: white;
-    color: black;
+    /*background-color: white;*/
+    color: white;
     display: none;
     /* Initially hide the expandable text */
 }
